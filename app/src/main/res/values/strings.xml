@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">MyMovieList</string>
     <string name="search">Cari apa</string>
-    <string name="searchbar_hint">Cari berdasarkan username…</string>
+    <string name="searchbar_hint">Cari movie…</string>
     <string name="profile_picture">Foto Profile</string>
     <string name="user_name">username</string>
     <string name="name">name</string>
-    <string name="user_url">user url</string>
+    <string name="movie_info">Movie info</string>
     <string name="followers">Followers</string>
     <string name="following">Following</string>
     <string name="dot">•</string>

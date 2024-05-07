@@ -19,6 +19,10 @@ class MainViewModel : ViewModel(){
     private val _isError = MutableLiveData(false)
     val isError: LiveData<Boolean> = _isError
 
+    private val _isNotFound = MutableLiveData(false)
+    val isNotFound: LiveData<Boolean> = _isNotFound
+
+
     private val _movieList = MutableLiveData<ArrayList<SearchItem>>()
     val movieList: LiveData<ArrayList<SearchItem>> = _movieList
 
@@ -35,9 +39,13 @@ class MainViewModel : ViewModel(){
                     call: Call<SearchResponse>,
                     response: Response<SearchResponse>
                 ) {
-                    if (response.isSuccessful) _movieList.value = response.body()?.search
-                    else Log.e(TAG, response.message())
-
+                    if (response.isSuccessful && response.body()?.response == "True") {
+                        _movieList.value = response.body()?.search
+                    }
+                    else {
+                        _movieList.value = arrayListOf()
+                        Log.e(TAG, response.message())
+                    }
                     _isLoading.value = false
                     _isError.value = false
                 }

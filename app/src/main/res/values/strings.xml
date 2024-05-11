@@ -3,7 +3,7 @@
     <string name="search">Cari apa</string>
     <string name="searchbar_hint">Cari movie…</string>
     <string name="profile_picture">Foto Profile</string>
-    <string name="user_name">username</string>
+    <string name="title">title</string>
     <string name="name">name</string>
     <string name="movie_info">Movie info</string>
     <string name="followers">Followers</string>
@@ -20,5 +20,17 @@
     <string name="followers_count">100 </string>
     <string name="following_count">100</string>
     <string name="github_icon">Github Icon</string>
-    <string name="title">title</string>
+    <string name="genre">Genre : </string>
+    <string name="runtime">24 min</string>
+    <string name="country">country</string>
+    <string name="year">year</string>
+    <string name="awards">Awards</string>
+    <string name="score">Score</string>
+    <string name="rating">rating</string>
+    <string name="vote">vote</string>
+    <string name="plot">Plot</string>
+    <string name="open_in_imdb">Open in IMDb</string>
+    <string name="plot_desc">\"Set in the late 1960s decade of Japan and follows the rivalry between Manpyo Daisuke, a powerful banker, and his eldest son, Manpyo Teppei, the executive managing director of a steel firm.\"</string>
+    <string name="detail_movie">Detail Movie</string>
+    <string name="type">type</string>
 </resources>

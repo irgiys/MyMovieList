@@ -16,7 +16,7 @@ interface ApiService {
     @GET("/")
     fun detailMovie(
         @Query("apikey") apiKey : String,
-        @Query("imdbID") imdbID : String
+        @Query("i") imdbID : String
     ): Call<DetailResponse>
 
 

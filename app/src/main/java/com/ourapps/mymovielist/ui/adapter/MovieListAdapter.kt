@@ -36,7 +36,7 @@ class MovieListAdapter(private val listMovie : ArrayList<SearchItem>) :
 
             Glide.with(root.context)
                 .load(movie.poster)
-                .placeholder(R.drawable.ic_launcher_background)
+                .placeholder(R.drawable.no_poster)
                 .into(poster)
         }
 

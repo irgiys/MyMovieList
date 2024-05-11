@@ -1,5 +1,6 @@
 package com.ourapps.mymovielist.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.ourapps.mymovielist.api.response.SearchItem
 import com.ourapps.mymovielist.databinding.ActivityMainBinding
+import com.ourapps.mymovielist.ui.MovieDetailActivity.Companion.EXTRA_MOVIE
 import com.ourapps.mymovielist.ui.adapter.MovieListAdapter
 import com.ourapps.mymovielist.viewmodel.MainViewModel
 
@@ -39,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                     false
                 }
         }
-        mainViewModel.movieList.observe(this){
+        mainViewModel.movieList.observe(this) {
             showMovieList(it)
         }
         mainViewModel.isLoading.observe(this) {
@@ -71,7 +73,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showMovieList(movie: ArrayList<SearchItem>) {
-        if (movie.size == 0) Toast.makeText(this@MainActivity, "Movie not Found", Toast.LENGTH_SHORT)
+        if (movie.size == 0) Toast.makeText(
+            this@MainActivity,
+            "Movie not Found",
+            Toast.LENGTH_SHORT
+        )
             .show()
 
         val movieListAdapater = MovieListAdapter(movie)
@@ -85,15 +91,17 @@ class MainActivity : AppCompatActivity() {
             override fun onItemClicked(movie: SearchItem) {
                 val clickTime = System.currentTimeMillis()
                 if (clickTime - lastClick > clickDelay) {
-//                navigateToMovieDetail(movie.imdbID)
+                    navigateToMovieDetail(movie.imdbID)
                 }
             }
         })
-//        private fun navigateToMovieDetail(imdbID: String?) {
-//            Intent(this@MainActivity, UserDetailActivity::class.java).apply {
-//                putExtra(EXTRA_USER, username)
-//            }.also {
-//                startActivity(it)
-//            }
+    }
+
+    private fun navigateToMovieDetail(imdbID: String?) {
+        Intent(this@MainActivity, MovieDetailActivity::class.java).apply {
+            putExtra(EXTRA_MOVIE, imdbID)
+        }.also {
+            startActivity(it)
+        }
     }
 }

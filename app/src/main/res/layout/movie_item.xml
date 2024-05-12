@@ -7,7 +7,7 @@
     android:layout_marginTop="8dp"
     android:paddingHorizontal="10dp"
     android:layout_marginHorizontal="8dp"
-    android:background="@color/design_default_color_on_primary"
+    android:background="?attr/colorAccent"
     >
 
     <ImageView
@@ -33,7 +33,7 @@
             app:layout_constraintStart_toEndOf="@id/poster"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/tv_info"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorPrimary"
             android:textSize="16sp"
             android:textStyle="bold"
             tools:text="anfoian oifnaiofn iaenfoainfaionf oiafnaioen" />
@@ -48,7 +48,7 @@
             app:layout_constraintTop_toBottomOf="@id/tv_title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondary"
             tools:text="@string/movie_info"
             />
 

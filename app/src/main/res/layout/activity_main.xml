@@ -29,15 +29,15 @@
             android:id="@+id/searchBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/searchbar_hint">
-
-        </com.google.android.material.search.SearchBar>
+            android:hint="@string/searchbar_hint" />
     </androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.search.SearchView
         android:id="@+id/searchView"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="#00854545"
+        android:backgroundTint="#B42424"
         android:hint="@string/searchbar_hint"
         app:layout_anchor="@id/toolbar"
         app:layout_constraintBottom_toBottomOf="parent"

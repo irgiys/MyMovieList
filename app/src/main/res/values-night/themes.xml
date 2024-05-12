@@ -3,5 +3,15 @@
     <style name="Base.Theme.MyMovieList" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+         <item name="colorOnBackground">@color/dark_primary</item>
+        <item name="colorAccent">@color/dark_secondary</item>
+        <item name="colorSurface">@color/dark_bg</item>
+
+
+        <item name="colorPrimary">@color/dark_text1</item>
+        <item name="colorSecondary">@color/dark_text2</item>
+
+        <item name="android:navigationBarColor">@color/dark_primary</item>
+        <item name="android:statusBarColor">@color/dark_primary</item>
     </style>
 </resources>

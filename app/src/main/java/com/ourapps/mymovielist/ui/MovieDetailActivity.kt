@@ -139,4 +139,8 @@ class MovieDetailActivity : AppCompatActivity(), View.OnClickListener {
             this.visibility = View.GONE
         }
     }
+    @Suppress("DEPRECATION")
+    fun onBackPressed(view: View) {
+        super.onBackPressed()
+    }
 }

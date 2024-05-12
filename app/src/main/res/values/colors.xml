@@ -2,4 +2,25 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--  dark -->
+    <color name="dark_primary">#0F1626</color>
+    <color name="dark_secondary">#1E2436</color>
+    <color name="dark_bg">#363C4E</color>
+
+    <color name="dark_text1">#FFFFFF</color>
+    <color name="dark_text2">#E0E0E0</color>
+
+
+    <!-- light -->
+    <color name="light_primary">#FFFFFF</color>
+    <color name="light_secondary">#F3F5F7</color>
+    <color name="light_bg">#9B9B9B</color>
+
+    <color name="light_text1">#0F1626</color>
+    <color name="light_text2">#1E2436</color>
+
+
+
+
 </resources>

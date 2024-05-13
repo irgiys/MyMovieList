@@ -5,8 +5,9 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="colorOnBackground">@color/light_primary</item>
         <item name="colorAccent">@color/light_secondary</item>
-        <item name="colorSurface">@color/light_secondary</item>
+        <item name="colorSurface">@color/light_primary</item>
 
+        <item name="colorOnPrimary">@color/light_primary</item>
 
         <item name="colorPrimary">@color/light_text1</item>
         <item name="colorSecondary">@color/light_text2</item>

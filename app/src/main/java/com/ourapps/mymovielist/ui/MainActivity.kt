@@ -77,6 +77,7 @@ class MainActivity : AppCompatActivity() {
             this@MainActivity,
             "Movie not Found",
             Toast.LENGTH_SHORT
+            
         )
             .show()
 

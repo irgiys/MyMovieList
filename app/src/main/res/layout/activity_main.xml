@@ -27,10 +27,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_popcorn"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+
         <com.google.android.material.search.SearchBar
             android:id="@+id/searchBar"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp"
+            android:layout_gravity="end"
             android:hint="@string/searchbar_hint" />
     </androidx.appcompat.widget.Toolbar>
 

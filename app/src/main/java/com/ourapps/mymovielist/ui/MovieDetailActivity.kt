@@ -6,13 +6,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 
 import com.bumptech.glide.Glide
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
 import com.ourapps.mymovielist.R
 import com.ourapps.mymovielist.api.response.DetailResponse
 import com.ourapps.mymovielist.databinding.ActivityMovieDetailBinding
@@ -97,9 +95,6 @@ class MovieDetailActivity : AppCompatActivity(), View.OnClickListener {
             } else {
                 awardsCard.visibility = View.GONE
             }
-
-            tvDotYear.visibility = if(!isNA(movie.country) && !isNA(movie.year)) View.VISIBLE
-            else View.GONE
 
             tvDotType.visibility = if(!isNA(movie.runtime) && !isNA(movie.type)) View.VISIBLE
             else View.GONE

@@ -11,7 +11,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class MainViewModel : ViewModel(){
+class HomeViewModel : ViewModel(){
 
     private val _isLoading = MutableLiveData(true)
     val isLoading: LiveData<Boolean> = _isLoading
@@ -61,7 +61,7 @@ class MainViewModel : ViewModel(){
         }
     }
     companion object {
-        private val TAG = MainViewModel::class.java.simpleName
+        private val TAG = HomeViewModel::class.java.simpleName
     }
 
 }

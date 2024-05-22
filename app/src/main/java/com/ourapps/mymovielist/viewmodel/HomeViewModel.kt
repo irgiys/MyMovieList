@@ -4,9 +4,9 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.ourapps.mymovielist.api.ApiConfig
-import com.ourapps.mymovielist.api.response.SearchItem
-import com.ourapps.mymovielist.api.response.SearchResponse
+import com.ourapps.mymovielist.db.api.ApiConfig
+import com.ourapps.mymovielist.db.api.response.SearchItem
+import com.ourapps.mymovielist.db.api.response.SearchResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

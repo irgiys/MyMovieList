@@ -1,4 +1,4 @@
-package com.ourapps.mymovielist.api
+package com.ourapps.mymovielist.db.api
 
 
 //import de.hdodenhof.circleimageview.BuildConfig

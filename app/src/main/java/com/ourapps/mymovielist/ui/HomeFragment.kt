@@ -9,7 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ourapps.mymovielist.api.response.SearchItem
+import com.ourapps.mymovielist.db.api.response.SearchItem
 import com.ourapps.mymovielist.databinding.FragmentHomeBinding
 import com.ourapps.mymovielist.ui.adapter.MovieListAdapter
 import com.ourapps.mymovielist.viewmodel.HomeViewModel

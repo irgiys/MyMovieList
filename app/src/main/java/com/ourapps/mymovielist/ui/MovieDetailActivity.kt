@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 import androidx.appcompat.app.AppCompatActivity
 
 import com.ourapps.mymovielist.R
-import com.ourapps.mymovielist.api.response.DetailResponse
+import com.ourapps.mymovielist.db.api.response.DetailResponse
 import com.ourapps.mymovielist.databinding.ActivityMovieDetailBinding
 import com.ourapps.mymovielist.viewmodel.MovieDetailViewModel
 

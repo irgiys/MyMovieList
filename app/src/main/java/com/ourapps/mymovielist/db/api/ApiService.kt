@@ -1,7 +1,7 @@
-package com.ourapps.mymovielist.api
+package com.ourapps.mymovielist.db.api
 
-import com.ourapps.mymovielist.api.response.DetailResponse
-import com.ourapps.mymovielist.api.response.SearchResponse
+import com.ourapps.mymovielist.db.api.response.DetailResponse
+import com.ourapps.mymovielist.db.api.response.SearchResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

@@ -1,4 +1,4 @@
-package com.ourapps.mymovielist.api.response
+package com.ourapps.mymovielist.db.api.response
 
 import com.google.gson.annotations.SerializedName
 

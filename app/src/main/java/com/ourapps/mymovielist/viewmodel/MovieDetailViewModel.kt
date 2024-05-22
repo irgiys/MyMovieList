@@ -4,8 +4,8 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.ourapps.mymovielist.api.ApiConfig
-import com.ourapps.mymovielist.api.response.DetailResponse
+import com.ourapps.mymovielist.db.api.ApiConfig
+import com.ourapps.mymovielist.db.api.response.DetailResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

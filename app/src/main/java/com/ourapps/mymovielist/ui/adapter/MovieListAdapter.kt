@@ -2,7 +2,7 @@ package com.ourapps.mymovielist.ui.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.ourapps.mymovielist.api.response.SearchItem
+import com.ourapps.mymovielist.db.api.response.SearchItem
 import com.ourapps.mymovielist.databinding.MovieItemBinding
 import android.view.LayoutInflater
 import com.bumptech.glide.Glide
